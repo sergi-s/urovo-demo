@@ -27,10 +27,13 @@ import android.os.RemoteException;
 
 import java.nio.charset.Charset;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
 
 public class RFReaderActivity extends BaseActivity implements View.OnClickListener {
 
     private String driver = "";
+    private String content = "";
     private EditText editText_block;
     private EditText editText_apdu;
     private RadioGroup radioGroup;
@@ -146,8 +149,9 @@ public class RFReaderActivity extends BaseActivity implements View.OnClickListen
                     } else {
                         byte[] result = new byte[ret3];
                         System.arraycopy(response, 0, result, 0, ret3);
-                        outputText("\response: " + response);
-                        outputText("readBlock success: " + ret3 + ",\nresult: " + BytesUtil.bytes2HexString(result));
+                        // outputText("\response: " + response);
+                        // outputText("readBlock success: " + ret3 + ",\nresult: " + BytesUtil.bytes2HexString(result));
+                        outputText("readBlock success: " + ret3 + ",\nresult: " + new String(response, StandardCharsets.UTF_8));
                     }
                     break;
                 case R.id.btnreadAllBlocks:
@@ -313,26 +317,34 @@ public class RFReaderActivity extends BaseActivity implements View.OnClickListen
         StringBuilder resultMessage = new StringBuilder();
 
         for (int block = 0; block <= 64; block++) {
-            outputText("Reading Block " + block);
+            // outputText("Reading Block " + block);
             byte[] response = new byte[16];
 
             try {
                 int ret3 = rfReader.readBlock(block, response);
 
                 if (ret3 < 0) {
-                    outputText("Read Block " + block + " failed: " + ret3);
+                    // outputText("Read Block " + block + " failed: " + ret3);
                 } else {
                     byte[] result = new byte[ret3];
+                    System.out.println(response);
                     System.arraycopy(response, 0, result, 0, ret3);
-                    resultMessage.append("Block ").append(block).append(":\n");
-                    resultMessage.append("Read success: ").append(ret3).append(",\n");
-                    resultMessage.append("Result: ").append(BytesUtil.bytes2HexString(result)).append("\n\n");
+                    content += (result);
+                    // resultMessage.append("Block ").append(block).append(":\n");
+                    // resultMessage.append("Read success: ").append(ret3).append(",\n");
+                    resultMessage.append("=> " + block).append(new String(response, StandardCharsets.UTF_8))
+                            .append("\n");
+                    // System.out.println(result);
+                    // System.out.println(BytesUtil.bytes2HexString(result));
+                    // resultMessage.append(BytesUtil.bytes2HexString(result)).append("\n");
                 }
             } catch (RemoteException e) {
                 // Handle the RemoteException, e.g., log it or show an error message
                 e.printStackTrace();
             }
         }
+        System.out.println("asdasdasdasdasdasda");
+        System.out.println("content=> " + content);
 
         // Display the result message in your UI or output it as needed
         outputText(resultMessage.toString());
