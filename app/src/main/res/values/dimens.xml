@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="pinpad_bt_height">48dp</dimen>
+    <dimen name="pinpad_bt_text_size">22sp</dimen>
+    <dimen name="pinpad_bt_text_size_middle">20sp</dimen>
+    <dimen name="pinpad_bt_text_size_big">28sp</dimen>
+    <dimen name="pinpad_bt_text_size_small">18sp</dimen>
+    <dimen name="pinpad_bt_view_margin">10dp</dimen>
+    <dimen name="pinpad_passwd_margin">6dp</dimen>
+    <dimen name="pinpad_bt_view_line">1dp</dimen>
+    
+    <dimen name="standard_padding">8dip</dimen>
+  <dimen name="half_padding">4dip</dimen>
+
+    <!-- 默认显示文本大小 -->
+    <dimen name="FontSize">16sp</dimen>
+
+    <!-- 文本框间距 -->
+    <dimen name="EtTopPadding">5dp</dimen>
+    <dimen name="EtLeftPadding">5dp</dimen>
+    <dimen name="EtRightPadding">5dp</dimen>
+    <dimen name="EtBottomPadding">5dp</dimen>
+    <dimen name="margin_left">15dp</dimen>
+    <dimen name="margin_right">15dp</dimen>
+</resources>

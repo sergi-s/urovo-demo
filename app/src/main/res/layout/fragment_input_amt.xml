@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/red"
+                android:text="Please enter the Amount"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/CardNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text=""
+                android:textColor="@color/blue1"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etAmt"
+            style="@style/CustomEtStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:maxLength="12"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:text="0.00"
+            android:textColor="@android:color/background_dark"
+            android:textSize="40sp" />
+
+        <TextView
+            style="@style/TvLabelStyle"
+            android:layout_alignBaseline="@id/etAmt"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/etAmt"
+            android:gravity="right"
+            android:text="￥"
+            android:textColor="@android:color/background_dark"
+            android:textSize="32sp" />
+    </RelativeLayout>
+
+    <com.urovo.sdk.emv.InputAmtView
+        android:id="@+id/nkv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7" />
+
+</LinearLayout>

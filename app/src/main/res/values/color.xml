@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <color name="scan_title_bar">#104E8B</color>
+    
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="window_background">#00000000</color>
+    <color name="dialog_background">#ffc9c9c9</color>
+    <color name="title_background">#ff003263</color>
+    <color name="white">#ffffff</color>
+    <color name="pink">#FF00FF</color>
+    <color name="blue">#0000C6</color>
+    <color name="green">#00BB00</color>
+    <color name="black">#000000</color>
+    <color name="red">#CE0000</color>
+    <color name="gray_12">#5B5B5B</color>
+    <color name="gray_7">#BEBEBE</color>
+    <color name="gray">#9D9D9D</color>
+    <color name="gray_text_color">#818181</color>
+    <color name="back_color">#B97A57</color>
+    <color name="text_color">#000000</color>
+    <color name="background_color">#f0f0f0</color>
+    <color name="background_color_scancode">#5d5b5c</color>
+    <color name="button_red">#fe4a31</color>
+    <color name="button_red_press">#e3452f</color>
+    <color name="button_green">#1ED94F</color>
+    <color name="button_green_press">#2ead2a</color>
+    <color name="button_yellow">#cec637</color>
+    <color name="button_yellow_press">#b4ac24</color>
+    <color name="button_blue">#297fb8</color>
+    <color name="button_blue_press">#1170b6</color>
+    <color name="button_purple">#9222e0</color>
+    <color name="button_purple_press">#850bda</color>
+    <!--  -->
+    <color name="title_color_red">#e01f0d</color>
+    <color name="content_color_red">#f71717</color>
+    <color name="bg">#0099cc</color>
+    <color name="sidebar_button_label">#ffd1d1d1</color>
+    <color name="right_background">#ffffffff</color>
+    <color name="textcolor">#ffffffff</color>
+    <color name="trans_red">#ccee1d1d</color>
+    <color name="trans_gray">#99654700</color>
+    <color name="brown">#894f0f</color>
+    <color name="red_line">#fa0034</color>
+    <color name="text">#a27467</color>
+    <color name="top_panel_background">#80000000</color>
+    <color name="top_panel_background_non_last_day">#FFFF7F27</color>
+    <color name="main_drawer_background">#80000000</color>
+    <color name="title_info_border">#FF404040</color>
+    <color name="message_dialog_activity_background">#B3000000</color>
+    <color name="text_color_black">#FF000000</color>
+    <color name="text_color_orange">#FFF87217</color>
+    <color name="text_color_light_grey">#FFB8B8B8</color>
+    <color name="text_color_border_grey">#FF5F5F5F</color>
+    <color name="text_color_blue">#FF126EE6</color>
+    <color name="text_color_light_blue">#FF87DBF5</color>
+    <color name="text_color_yellow">#FFFFFF00</color>
+    <color name="graph_axis_color">#66FFFFFF</color>
+    <color name="settings_item_border">#FF000000</color>
+    <color name="activity_background">#FF333333</color>
+    <color name="page_bar_background">#77000000</color>
+    <color name="page_bar_text_color">#55FFFFFF</color>
+    <color name="page_bar_text_color_highlight">#FFFFFFFF</color>
+    <color name="splach_start_to_play_green">#FF00FF00</color>
+    <color name="splach_connect_ok">#FF00FFFF</color>
+    <color name="cell_empty">#FF993311</color>
+    <color name="cell_filled">#FFA99033</color>
+    <color name="cell_empty_hover">#FF00FF00</color>
+    <color name="cell_filled_hover">#FFAADDDD</color>
+    <color name="setting_help_yellow">#EDD000</color>
+    <color name="how_to_use_light_status_gray">#FF333333</color>
+    <color name="listBackground">#FF000000</color>
+    <color name="textForeground">#e0e0e0</color>
+    <color name="holo_dark_green">#669900</color>
+    <color name="holo_dark_red">#CC0000</color>
+    <color name="app_background">#ff1d1d1d</color>
+    <color name="text_color_white">#FFFFFFFF</color>
+    <color name="white_text_selected">#ff959595</color>
+    <color name="dark_gray">#ff919191</color>
+     <color name="contents_text">#ff000000</color>
+<!--  
+ <color name="encode_view">#ffffffff</color>
+  <color name="possible_result_points">#c0ffbd21</color> 
+  <color name="result_minor_text">#ffc0c0c0</color>
+  <color name="result_points">#c099cc00</color> 
+  <color name="result_text">#ffffffff</color>
+  <color name="result_view">#b0000000</color>
+  <color name="status_text">#ffffffff</color>
+  <color name="transparent">#00000000</color>
+  <color name="viewfinder_laser">#ffcc0000</color> 
+  <color name="viewfinder_mask">#60000000</color>
+  -->
+  
+  
+  
+ <!--   <color name="rect_corner">#00FFFF</color> -->
+      <color name="rect_corner">#00FFFF</color>
+      <!-- <color name="blue">#AAFFFF</color> -->
+      <color name="blue_line">#AAFFFF</color>
+      <color name="centerblue">#5555FFFF</color>
+      <color name="lightblue">#0022FFFF</color>
+      
+      
+      
+      <color name="encode_view">#ffffffff</color>
+      
+      <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+  	  <color name="result_minor_text">#ffc0c0c0</color>
+      <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+      <color name="result_text">#ffffffff</color>
+      <color name="result_view">#b0000000</color>
+      <color name="status_text">#ffffffff</color>
+      <color name="transparent">#00000000</color>
+      <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+      <color name="viewfinder_mask">#60000000</color>
+
+    <!-- activity 白色背景1 -->
+    <color name="activity_white_bg1">#f4f4f4</color>
+    <color name="blue1">#0000C6</color>
+    <color name="black_text_main">#565555</color>
+    <!-- 文本颜色   深灰色 -->
+    <color name="textColor_darkGery">#333333</color>
+      
+</resources>

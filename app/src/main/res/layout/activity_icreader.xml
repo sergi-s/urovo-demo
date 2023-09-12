@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="IC card" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PSAM 1" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PSAM 2" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="APDU：" />
+
+                <EditText
+                    android:id="@+id/editText_apdu"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnpowerUp"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_round"
+                android:onClick="onClick"
+                android:text="Power up" />
+
+            <Button
+                android:id="@+id/btnpowerDown"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_round"
+                android:onClick="onClick"
+                android:text="Power down" />
+
+            <Button
+                android:id="@+id/btnIsCardIn"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_round"
+                android:onClick="onClick"
+                android:text="Is card exist" />
+
+            <Button
+                android:id="@+id/btnIsPsamCardIn"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_round"
+                android:onClick="onClick"
+                android:text="Is PSAM exist" />
+
+            <Button
+                android:id="@+id/btnExchangeApdu"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_round"
+                android:onClick="onClick"
+                android:text="APDU" />
+
+            <include layout="@layout/layout_output" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Blue："
+                    android:textColor="#0000ff"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnOnBlue"
+                    style="@style/button_style"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round"
+                    android:onClick="onClick"
+                    android:text="Open" />
+
+                <Button
+                    android:id="@+id/btnOffBlue"
+                    style="@style/button_style"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round"
+                    android:onClick="onClick"
+                    android:text="Close" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Yellow："
+                    android:textColor="#ffff00"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnOnYellow"
+                    style="@style/button_style"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round"
+                    android:onClick="onClick"
+                    android:text="Open" />
+
+                <Button
+                    android:id="@+id/btnOffYellow"
+                    style="@style/button_style"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round"
+                    android:onClick="onClick"
+                    android:text="Close" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Green："
+                    android:textColor="#8FC550"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnOnGreen"
+                    style="@style/button_style"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round"
+                    android:onClick="onClick"
+                    android:text="Open" />
+
+                <Button
+                    android:id="@+id/btnOffGreen"
+                    style="@style/button_style"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round"
+                    android:onClick="onClick"
+                    android:text="Close" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Red："
+                    android:textColor="#ff0000"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnOnRed"
+                    style="@style/button_style"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round"
+                    android:onClick="onClick"
+                    android:text="Open" />
+
+                <Button
+                    android:id="@+id/btnOffRed"
+                    style="@style/button_style"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round"
+                    android:onClick="onClick"
+                    android:text="Close" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_output" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

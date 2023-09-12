@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.urovo.sdk" android:installLocation="auto">
+
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.FLASHLIGHT" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <uses-permission android:name="android.permission.CLOUDPOS_CONTACTLESS_CARD" />
+  <uses-permission android:name="android.permission.NFC" />
+  <uses-permission android:name="android.permission.CALL_PHONE" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+  <uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+  <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"></uses-permission>
+  <uses-permission android:name="android.permission.VIBRATE" />
+
+  <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+
+  <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" tools:ignore="ProtectedPermissions" />
+
+  <!-- new -->
+  <uses-feature android:name="android.hardware.nfc" />
+  <!-- end new -->
+
+  <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
+
+    <activity android:name="com.urovo.sdk.MainActivity" android:screenOrientation="nosensor">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+
+        <!--                <category android:name="android.intent.category.HOME" />-->
+        <!--                <category android:name="android.intent.category.DEFAULT" />-->
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.nfc.action.TECH_DISCOVERED" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.nfc.action.TAG_DISCOVERED" />
+      </intent-filter>
+    </activity>
+    <activity android:name="com.urovo.sdk.aid.UpdateAIDActivity"></activity>
+
+    <activity android:name="com.urovo.sdk.view.SerialPortActivity" android:exported="false" android:screenOrientation="nosensor"></activity>
+    <activity android:name="com.urovo.sdk.view.PrintActivity" android:exported="false" android:screenOrientation="nosensor"></activity>
+    <activity android:name="com.urovo.sdk.view.ICReaderActivity" android:exported="false" android:screenOrientation="nosensor"></activity>
+    <activity android:name="com.urovo.sdk.view.LedActivity" android:exported="false" android:screenOrientation="nosensor"></activity>
+    <activity android:name="com.urovo.sdk.view.MagCardReaderActivity" android:exported="false" android:screenOrientation="nosensor"></activity>
+    <activity android:name="com.urovo.sdk.view.RFReaderActivity" android:exported="false" android:screenOrientation="nosensor"></activity>
+    <activity android:name="com.urovo.sdk.view.BeamActivity" android:exported="false" android:screenOrientation="nosensor"></activity>
+    <activity android:name="com.urovo.sdk.view.BeamActivity2" android:exported="false" android:screenOrientation="nosensor"></activity>
+
+    <activity android:name="com.urovo.sdk.view.PinpadActivity" android:exported="false" android:screenOrientation="nosensor"></activity>
+    <activity android:name="com.urovo.sdk.view.ScanActivity" android:exported="false" android:screenOrientation="nosensor"></activity>
+    <activity android:name="com.urovo.sdk.view.ScanCustomActivity" android:exported="false" android:screenOrientation="nosensor"></activity>
+    <activity android:name="com.urovo.sdk.view.BeeperActivity" android:exported="false" android:screenOrientation="nosensor"></activity>
+    <activity android:name="com.urovo.sdk.emv.EmvActivity" android:exported="false" android:screenOrientation="nosensor"></activity>
+    <activity android:name="com.urovo.sdk.view.SilentInstallActivity" android:exported="false" android:screenOrientation="nosensor"></activity>
+    <activity android:name="com.urovo.sdk.view.EmvTestActivity" android:exported="false" android:screenOrientation="nosensor"></activity>
+
+    <meta-data android:name="android.nfc.action.TECH_DISCOVERED" android:resource="@xml/nfc_tech_filter" />
+
+  </application>
+
+</manifest>

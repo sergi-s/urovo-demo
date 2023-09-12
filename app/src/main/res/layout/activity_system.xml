@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_setDefaultDataSubId"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_round"
+                    android:onClick="onClick"
+                    android:text="setDefaultDataSubId"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btn_setForceLockScreen"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_round"
+                    android:onClick="onClick"
+                    android:text="setForceLockScreen"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btn_setLockSreenNon"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_round"
+                    android:onClick="onClick"
+                    android:text="setLockSreenNon"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btn_setLanguage"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_round"
+                    android:onClick="onClick"
+                    android:text="setLanguage"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_output" />
+    </ScrollView>
+
+</LinearLayout>

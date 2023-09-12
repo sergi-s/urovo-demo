@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- 默认时的背景图片 <corners android:bottomRightRadius="4dp" /> -->
+    <!--<item><shape>
+        <gradient android:centerColor="#FFFFFF" android:endColor="#FFFFFF" android:startColor="#FFFFFF" />
+
+        <stroke android:width="1px" android:color="#cccccc" />
+    </shape></item>-->
+
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+        <solid android:color="#cdcdcd" />
+
+        <stroke android:width="1px" android:color="#f0f0f0" />
+    </shape></item>
+    <item><shape android:shape="rectangle">
+        <solid android:color="#ffffff" />
+
+        <stroke android:width="1px" android:color="#f0f0f0" />
+    </shape></item>
+
+
+</selector>

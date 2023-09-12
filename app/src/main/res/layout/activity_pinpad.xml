@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_isKeyExist"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="Is Key Exist" />
+
+                    <Button
+                        android:id="@+id/button_diversifiedKey"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="DiversifiedKey" />
+
+                    <Button
+                        android:id="@+id/button_loadTEK"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="Load TEK" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_loadMainKeyEnc"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="Load Enc MainKey" />
+
+                    <Button
+                        android:id="@+id/button_loadMainKey"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="Load MainKey" />
+
+                    <Button
+                        android:id="@+id/button_loadWorkKey"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="Load WorkKey" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_startPinInput"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="Start Pin(online)" />
+
+                    <Button
+                        android:id="@+id/button_startPinInput2"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="Start Pin(offline)"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/button_encryptData"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="Encrypt Data" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/button_deleteKey"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="Delete Key" />
+
+                    <Button
+                        android:id="@+id/button_calcMAC"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="Calc MAC" />
+
+                    <Button
+                        android:id="@+id/downloadKeyDukpt"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="Download Dukpt key" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/DukptGetKsn"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="DukptGetKsn" />
+
+                    <Button
+                        android:id="@+id/calculateMACOfDUKPTExtend"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="CalcMACOfDUKPT" />
+
+                    <Button
+                        android:id="@+id/GetDukptPinBlock"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="GetDukptPinBlock" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/button_getRSAPublicKeyModel"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="getRSAPublicKey" />
+
+                    <Button
+                        android:id="@+id/button_encryptWithPEK"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="encryptWithPEK" />
+
+                    <Button
+                        android:id="@+id/button_DukptEncryptDataIV"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="DukptEncryptDataIV" />
+
+                    <Button
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/button_customKeyboard1"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="customKeyboard 1" />
+
+                    <Button
+                        android:id="@+id/button_customKeyboard3"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="customKeyboard 3" />
+
+                    <Button
+                        android:id="@+id/button_customKeyboard4"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="customKeyboard 4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/button_customKeyboard5"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="customKeyboard 5" />
+
+                    <Button
+                        android:id="@+id/button_customKeyboard6"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="customKeyboard 6"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/button_genKeyHashValue"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round"
+                        android:onClick="onClick"
+                        android:text="genKeyHashValue" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_output" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
